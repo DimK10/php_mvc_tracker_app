@@ -29,14 +29,14 @@
 
 <section id="add" class="add">
     <h2>Add Course</h2>
-    <form action="." method="POST" id="add__form" class="add__form">
+    <form action="." method="post" id="add__form" class="add__form">
         <input type="hidden" name="action" value="add_course">
         <div class="add__inputs">
             <label for="course_name-input">Name:</label>
             <input type="text" id="course_name-input" name="course_name" maxlength="50" placeholder="Name" autofocus required>
-            <div class="add__addItem">
-                <button class="add-button bold">Add</button>
-            </div>
+        </div>
+        <div class="add__addItem">
+            <button class="add-button bold">Add</button>
         </div>
     </form>
 </section>

@@ -1,4 +1,5 @@
 <?php
+
     require ('model/database.php');
     require ('model/assignments_db.php');
     require ('model/course_db.php');
@@ -43,8 +44,8 @@
             if ($course_id) {
                 try {
                     delete_course($course_id);
-                } catch (PDOException $e) {
-                    $error ="You cannot delete a course if assignments exst in the course";
+                } catch (PDOException  $e) {
+                    $error = "You cannot delete a course if assignments exist in the course";
                     include ('view/error.php');
                     exit();
                 }
